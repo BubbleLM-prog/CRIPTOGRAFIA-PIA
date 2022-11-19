@@ -21,7 +21,7 @@ while True:
         print("Bienvenido, ¿desea registrarse (1), iniciar sesion (2) o salir (3)?")
         op= int(input("Opción: "))
     
-    #Registro del usuario
+    #Registro del usuario xd
     if op == 1:
         username= input("\nIngrese un nombre de usuario: ")
         password= input("Ingrese una contraseña: ")
