@@ -52,7 +52,7 @@ def sign(cer: str, seed: bytes):
     signed_raw = sign_key.sign(cer.encode("utf-8"))
     return signed_raw
 
-def register(username: str, password: str):
+def register(username: str, password: str, Age:int, Email:str, Celphone:str):
     seed: bytes = genKeyPair()
     signed: dict = sign(username, seed)
     write(encrypt(seed, password.encode("utf-8")), username + ".key")

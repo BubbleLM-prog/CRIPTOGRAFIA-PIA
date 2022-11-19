@@ -25,11 +25,16 @@ while True:
     if op == 1:
         username= input("\nIngrese un nombre de usuario: ")
         password= input("Ingrese una contraseña: ")
+        Age= input ("Cual es tu edad")
+        Email= input("Ingresa tu correo")
+        Celphone= input("Cual es tu telefono")
+
         main.register(username, password)
-        print("\nSe ha registrado con exito!\n") #Se registra al usuario
+        print("\nEspere un momento...Listo sus datos han sido registrados!" + username + "con el correo" + Email) #Se registra al usuario
+
         
         #Firma de documentos
-        print("Realizando la firma de documentos.......")
+        print("Realizando la firma de documentos.....listo..")
         time.sleep(5)                                           #Se importo el modulo time para generar una espera
         with open (username + ".cer", "rb") as f:
             cer= str(f.read())                          #Abre el archivo .cer y lo lee
