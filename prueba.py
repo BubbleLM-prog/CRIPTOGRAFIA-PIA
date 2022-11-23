@@ -1,10 +1,6 @@
 # PIA: Sistema Criptografico
 # Integrantes:
-# 1911964
-# 1920760
-# 1743353
-# 1819511
-# 1821251
+
 
 import main # Se importo el codigo main 
 import time
@@ -21,15 +17,20 @@ while True:
         print("Bienvenido, ¿desea registrarse (1), iniciar sesion (2) o salir (3)?")
         op= int(input("Opción: "))
     
-    #Registro del usuario
+    #Registro del usuario xd
     if op == 1:
         username= input("\nIngrese un nombre de usuario: ")
         password= input("Ingrese una contraseña: ")
-        main.register(username, password)
-        print("\nSe ha registrado con exito!\n") #Se registra al usuario
+        Age= input ("Cual es tu edad")
+        Email= input("Ingresa tu correo")
+        Celphone= input("Cual es tu telefono")
+
+        main.register(username, password, Age, Email, Celphone)
+        print("\nEspere un momento...Listo sus datos han sido registrados!" + username + "con el correo" + Email) #Se registra al usuario
+
         
         #Firma de documentos
-        print("Realizando la firma de documentos.......")
+        print("Realizando la firma de documentos.....listo..")
         time.sleep(5)                                           #Se importo el modulo time para generar una espera
         with open (username + ".cer", "rb") as f:
             cer= str(f.read())                          #Abre el archivo .cer y lo lee
@@ -80,4 +81,6 @@ while True:
     if i != 1:
         print("\nHasta luego :D")
         break
+
+    #xdd#
 
