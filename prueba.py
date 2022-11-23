@@ -1,10 +1,6 @@
 # PIA: Sistema Criptografico
 # Integrantes:
-# 1911964
-# 1920760
-# 1743353
-# 1819511
-# 1821251
+
 
 import main # Se importo el codigo main 
 import time
@@ -29,7 +25,7 @@ while True:
         Email= input("Ingresa tu correo")
         Celphone= input("Cual es tu telefono")
 
-        main.register(username, password)
+        main.register(username, password, Age, Email, Celphone)
         print("\nEspere un momento...Listo sus datos han sido registrados!" + username + "con el correo" + Email) #Se registra al usuario
 
         
